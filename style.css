@@ -212,19 +212,19 @@ article {
 
 @font-face {
   font-family: "Arial";
-  src: url("/assets/fonts/Arial/Arial.ttf");
+  src: url("../assets/fonts/Arial/Arial.ttf");
 }
 @font-face {
   font-family: "Arial-italic";
-  src: url("/assets/fonts/Arial/Arial.ttf");
+  src: url("../assets/fonts/Arial/Arial.ttf");
 }
 @font-face {
   font-family: "Georgia-normal";
-  src: url("/assets/fonts/Georgia/Georgia-normal.ttf");
+  src: url("../assets/fonts/Georgia/Georgia-normal.ttf");
 }
 @font-face {
   font-family: "Georgia-bold";
-  src: url("/assets/fonts/Georgia/Georgia-bold.ttf");
+  src: url("../assets/fonts/Georgia/Georgia-bold.ttf");
 }
 html {
   font-size: 62.5%;
@@ -631,16 +631,16 @@ article {
 }
 
 .adress__mail_svg {
-  background-image: url("/assets/svg/footer/icon-email.svg");
+  background-image: url("../assets/svg/footer/icon-email.svg");
 }
 
 .adress__number_svg {
-  background-image: url("/assets/svg/footer/icon-phone.svg");
+  background-image: url("../assets/svg/footer/icon-phone.svg");
 }
 
 .map__svg {
   background-size: 2.1rem 3.2rem;
-  background-image: url("/assets/svg/footer/icon-marker.svg");
+  background-image: url("../assets/svg/footer/icon-marker.svg");
   margin-right: 1, 5rem;
   margin-right: 0rem;
 }
@@ -650,7 +650,7 @@ article {
 }
 
 .footer__img {
-  background-image: url("/assets/img/footer/footer-puppy.png");
+  background-image: url("../assets/img/footer/footer-puppy.png");
   width: 30rem;
   height: 31rem;
   background-repeat: no-repeat;
@@ -784,7 +784,7 @@ article {
 .not-only__img {
   width: 69.8rem;
   height: 72.8rem;
-  background-image: url("/assets/img/not-only/puppy.png");
+  background-image: url("./assets/img/not-only/puppy.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -805,7 +805,7 @@ article {
 
 .about__img {
   height: 40.8rem;
-  background-image: url("/assets/img/about/about-pets.png");
+  background-image: url("./assets/img/about/about-pets.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -864,21 +864,21 @@ article {
 .slider__left-arrow {
   left: -4.5rem;
   top: 25.2rem;
-  background-image: url("/assets/svg/left-arrow.svg");
+  background-image: url("./assets/svg/left-arrow.svg");
 }
 .slider__left-arrow:hover {
   cursor: pointer;
-  background-image: url("/assets/svg/left-arrow_hover.svg");
+  background-image: url("./assets/svg/left-arrow_hover.svg");
 }
 
 .slider__right-arrow {
   left: 110.2rem;
   top: 25.2rem;
-  background-image: url("/assets/svg/right-arrow.svg");
+  background-image: url("./assets/svg/right-arrow.svg");
 }
 .slider__right-arrow:hover {
   cursor: pointer;
-  background-image: url("/assets/svg/right-arrow_hover.svg");
+  background-image: url("./assets/svg/right-arrow_hover.svg");
 }
 
 .our-friends__slider__card {
