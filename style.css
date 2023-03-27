@@ -212,15 +212,15 @@ article {
 
 @font-face {
   font-family: "Arial";
-  src: url("../assets/fonts/Arial/Arial.ttf");
+  src: url("./assets/fonts/Arial/Arial.ttf");
 }
 @font-face {
   font-family: "Arial-italic";
-  src: url("../assets/fonts/Arial/Arial.ttf");
+  src: url("/assets/fonts/Arial/Arial.ttf");
 }
 @font-face {
   font-family: "Georgia-normal";
-  src: url("../assets/fonts/Georgia/Georgia-normal.ttf");
+  src: url("./assets/fonts/Georgia/Georgia-normal.ttf");
 }
 @font-face {
   font-family: "Georgia-bold";
@@ -631,16 +631,16 @@ article {
 }
 
 .adress__mail_svg {
-  background-image: url("../assets/svg/footer/icon-email.svg");
+  background-image: url("./assets/svg/footer/icon-email.svg");
 }
 
 .adress__number_svg {
-  background-image: url("../assets/svg/footer/icon-phone.svg");
+  background-image: url("./assets/svg/footer/icon-phone.svg");
 }
 
 .map__svg {
   background-size: 2.1rem 3.2rem;
-  background-image: url("../assets/svg/footer/icon-marker.svg");
+  background-image: url("./assets/svg/footer/icon-marker.svg");
   margin-right: 1, 5rem;
   margin-right: 0rem;
 }
@@ -650,7 +650,7 @@ article {
 }
 
 .footer__img {
-  background-image: url("../assets/img/footer/footer-puppy.png");
+  background-image: url("./assets/img/footer/footer-puppy.png");
   width: 30rem;
   height: 31rem;
   background-repeat: no-repeat;
@@ -748,7 +748,7 @@ article {
 
 .texture {
   background: linear-gradient(to right, #4f3f33, #262425);
-  background-image: url("/assets/img/bg/texture.png");
+  background-image: url("./assets/img/bg/texture.png");
   background-repeat: repeat;
 }
 
@@ -901,15 +901,15 @@ article {
 }
 
 .card__img_1 {
-  background-image: url("/assets/img/our-friends/1.png");
+  background-image: url("./assets/img/our-friends/1.png");
 }
 
 .card__img_2 {
-  background-image: url("/assets/img/our-friends/2.png");
+  background-image: url("./assets/img/our-friends/2.png");
 }
 
 .card__img_3 {
-  background-image: url("/assets/img/our-friends/3.png");
+  background-image: url("./assets/img/our-friends/3.png");
 }
 
 .card__title {
@@ -1021,39 +1021,39 @@ article {
 }
 
 .help__item-1 {
-  background-image: url("/assets/svg/help/icon-pet-food.svg");
+  background-image: url("./assets/svg/help/icon-pet-food.svg");
 }
 
 .help__item-2 {
-  background-image: url("/assets/svg/help/icon-transportation.svg");
+  background-image: url("./assets/svg/help/icon-transportation.svg");
 }
 
 .help__item-3 {
-  background-image: url("/assets/svg/help/icon-toys.svg");
+  background-image: url("./assets/svg/help/icon-toys.svg");
 }
 
 .help__item-4 {
-  background-image: url("/assets/svg/help/icon-bowls-and-cups.svg");
+  background-image: url("./assets/svg/help/icon-bowls-and-cups.svg");
 }
 
 .help__item-5 {
-  background-image: url("/assets/svg/help/icon-shampoos.svg");
+  background-image: url("./assets/svg/help/icon-shampoos.svg");
 }
 
 .help__item-6 {
-  background-image: url("/assets/svg/help/icon-vitamins.svg");
+  background-image: url("./assets/svg/help/icon-vitamins.svg");
 }
 
 .help__item-7 {
-  background-image: url("/assets/svg/help/icon-medicines.svg");
+  background-image: url("./assets/svg/help/icon-medicines.svg");
 }
 
 .help__item-8 {
-  background-image: url("/assets/svg/help/icon-collars-leashes.svg");
+  background-image: url("./assets/svg/help/icon-collars-leashes.svg");
 }
 
 .help__item-9 {
-  background-image: url("/assets/svg/help/icon-sleeping-area.svg");
+  background-image: url("./assets/svg/help/icon-sleeping-area.svg");
 }
 
 .in-addition {
@@ -1076,7 +1076,7 @@ article {
   justify-self: end;
   width: 50.5rem;
   height: 26.1rem;
-  background-image: url("/assets/img/in-addition/donation-dog.png");
+  background-image: url("./assets/img/in-addition/donation-dog.png");
   background-repeat: no-repeat;
 }
 
@@ -1108,7 +1108,7 @@ article {
 .credit-card .credit-card__svg {
   width: 30rem;
   height: 2.3rem;
-  background-image: url("/assets/svg/credit-card.svg");
+  background-image: url("./assets/svg/credit-card.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -1193,35 +1193,35 @@ article {
 }
 
 .card__img_1 {
-  background-image: url("/assets/img/our-friends/1.png");
+  background-image: url("./assets/img/our-friends/1.png");
 }
 
 .card__img_2 {
-  background-image: url("/assets/img/our-friends/2.png");
+  background-image: url("./assets/img/our-friends/2.png");
 }
 
 .card__img_3 {
-  background-image: url("/assets/img/our-friends/3.png");
+  background-image: url("./assets/img/our-friends/3.png");
 }
 
 .card__img_4 {
-  background-image: url("/assets/img/our-friends/4.png");
+  background-image: url("./assets/img/our-friends/4.png");
 }
 
 .card__img_5 {
-  background-image: url("/assets/img/our-friends/5.png");
+  background-image: url("./assets/img/our-friends/5.png");
 }
 
 .card__img_6 {
-  background-image: url("/assets/img/our-friends/6.png");
+  background-image: url("./assets/img/our-friends/6.png");
 }
 
 .card__img_7 {
-  background-image: url("/assets/img/our-friends/7.png");
+  background-image: url("./assets/img/our-friends/7.png");
 }
 
 .card__img_8 {
-  background-image: url("/assets/img/our-friends/8.png");
+  background-image: url("./assets/img/our-friends/8.png");
 }
 
 .card__title {
@@ -1249,31 +1249,31 @@ article {
 }
 
 .slider__buttons_1 {
-  background-image: url("/assets/svg/pets-slider/left_left.svg");
+  background-image: url("./assets/svg/pets-slider/left_left.svg");
 }
 
 .slider__buttons_2 {
-  background-image: url("/assets/svg/pets-slider/left.svg");
+  background-image: url("./assets/svg/pets-slider/left.svg");
 }
 
 .slider__buttons_3 {
-  background-image: url("/assets/svg/pets-slider/button_active.svg");
+  background-image: url("./assets/svg/pets-slider/button_active.svg");
 }
 
 .slider__buttons_4 {
-  background-image: url("/assets/svg/pets-slider/right.svg");
+  background-image: url("./assets/svg/pets-slider/right.svg");
 }
 .slider__buttons_4:hover {
   cursor: pointer;
-  background-image: url("/assets/svg/pets-slider/right_hover.svg");
+  background-image: url("./assets/svg/pets-slider/right_hover.svg");
 }
 
 .slider__buttons_5 {
-  background-image: url("/assets/svg/pets-slider/right_right.svg");
+  background-image: url("./assets/svg/pets-slider/right_right.svg");
 }
 .slider__buttons_5:hover {
   cursor: pointer;
-  background-image: url("/assets/svg/pets-slider/right_right_hover.svg");
+  background-image: url("./assets/svg/pets-slider/right_right_hover.svg");
 }
 
 /*# sourceMappingURL=style.css.map */
