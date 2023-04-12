@@ -1,0 +1,31 @@
+@import 'base/normalize';
+
+//Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+//Base
+@import 'base/base';
+@import 'base/normalize';
+
+//Layout
+@import 'layout/navigation';
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/header-pets';
+@import 'layout/navigation-pets';
+
+//Components
+@import 'components/not-only';
+@import 'components/about';
+@import 'components/our-friends';
+@import 'components/buttons';
+@import 'components/help';
+@import 'components/in-addition.scss';
+@import 'components/our-pets';
+@import 'components/hamburger';
+@import 'components/adaptive_menu';
+@import 'components/carusel';
+@import 'components/modal';

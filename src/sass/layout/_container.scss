@@ -1,0 +1,20 @@
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0rem 4rem;
+  @media (max-width: 725px) and (min-width: 720px) {
+    padding: 0rem 1rem !important;
+  }
+  @include media-tablet {
+    padding: 0rem 3rem;
+  }
+  @include media-mobile-big {
+    padding: 0rem 15rem;
+  }
+  @include media-mobile-big {
+    padding: 0rem 3rem;
+  }
+  @include media-mobile-small {
+    padding: 0rem 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+.nav {
+  text-align: right; /* выравнивание навигации по правому краю */
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu {
+  display: inline-block;
+  width: 44.3rem;
+  margin-top: 4.3rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* четыре колонки */
+  grid-gap: 3.5rem; /* промежуток между элементами */
+  place-items: center;
+  @include media-tablet {
+    margin-top: 3.7rem !important;
+  }
+}
+
+.menu__li {
+  display: inline-block; /* элементы списка располагаются в одной строке */
+}
+
+.menu__link {
+  @extend %font-Arial;
+  @include font(1.5rem, 2.4rem);
+  color: $color-dark-s;
+  @extend %transition;
+  &:hover {
+    color: $color-light-s;
+  }
+}
+
+.menu__link_active a {
+  cursor: default;
+}
+
+.menu__link_active {
+  @extend %font-Arial;
+  @include font(1.5rem, 2.4rem);
+  color: $color-light-s;
+  border-bottom: 0.3rem solid $color-primary;
+  cursor: default;
+}

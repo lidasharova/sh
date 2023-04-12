@@ -1,0 +1,121 @@
+.help {
+  background-color: $color-light-xl;
+}
+
+.help__title {
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+  max-width: 31rem;
+  @include media-mobile-small {
+    margin-top: 4.2rem;
+    max-width: 27rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.help__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8.7rem;
+  margin-bottom: 10rem;
+  @include media-tablet {
+    padding: 0rem 0;
+    margin-bottom: 10rem;
+  }
+  @include media-mobile-small {
+    margin-bottom: 43px;
+  }
+}
+
+.help__wrapper__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 11.9rem;
+  row-gap: 5.5rem;
+  @include laptop {
+    column-gap: 10.9rem;
+    row-gap: 5.5rem;
+  }
+
+  @include media-tablet {
+    column-gap: 6rem;
+  }
+  @include media-mobile-small {
+    column-gap: 2rem;
+    row-gap: 3.1rem;
+    justify-content: flex-start;
+  }
+}
+
+.help__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 11.3rem;
+  @include laptop {
+    width: 10rem;
+  }
+  @include media-tablet {
+    width: 17rem;
+  }
+  @include media-mobile-small {
+    width: 13rem;
+  }
+  @include media-mobile-small {
+    height: 8.7rem;
+  }
+}
+
+.help__img {
+  width: 6rem;
+  height: 6rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  @include media-mobile-small {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+}
+
+.help__item-1 {
+  background-image: url('./assets/svg/help/icon-pet-food.svg');
+}
+
+.help__item-2 {
+  background-image: url('./assets/svg/help/icon-transportation.svg');
+}
+
+.help__item-3 {
+  background-image: url('./assets/svg/help/icon-toys.svg');
+}
+
+.help__item-4 {
+  background-image: url('./assets/svg/help/icon-bowls-and-cups.svg');
+}
+
+.help__item-5 {
+  background-image: url('./assets/svg/help/icon-shampoos.svg');
+}
+
+.help__item-6 {
+  background-image: url('./assets/svg/help/icon-vitamins.svg');
+}
+
+.help__item-7 {
+  background-image: url('./assets/svg/help/icon-medicines.svg');
+}
+
+.help__item-8 {
+  background-image: url('./assets/svg/help/icon-collars-leashes.svg');
+}
+
+.help__item-9 {
+  background-image: url('./assets/svg/help/icon-sleeping-area.svg');
+}

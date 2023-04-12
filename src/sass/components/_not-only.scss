@@ -1,0 +1,121 @@
+.not-only {
+  @include media-tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.not-only__container {
+  @include media-mobile-small {
+    padding: 0 0rem;
+  }
+}
+
+.not-only__wrapper {
+  display: grid;
+  grid-template-columns: 46rem auto;
+  gap: 4.2rem;
+  padding-top: 9rem;
+  align-items: center; /* отцентровать по вертикали */
+  grid-template-rows: auto;
+  @include media-tablet {
+    grid-template-columns: 46rem;
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    align-content: center;
+  }
+  @include media-tablet {
+    padding-top: 0;
+  }
+  @include media-mobile-small {
+    grid-template-columns: 30rem;
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    align-content: center;
+  }
+}
+
+.not-only__content {
+  align-self: start;
+  margin-top: 16.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 32.2rem;
+  @include media-tablet {
+    margin-top: 6.2rem;
+  }
+  @include media-mobile-small {
+    align-items: center;
+  }
+}
+
+.not-only__title {
+  max-width: 31rem;
+  @include media-mobile-small {
+    max-width: 20rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-right: -2px;
+    margin-top: -1px;
+  }
+}
+
+.not-only__text {
+  @extend %font-Arial;
+  @include font(1.5rem, 2.4rem);
+  color: $color-dark-s;
+  max-width: 46rem;
+  @include media-tablet {
+    margin-top: 41px;
+  }
+  @include media-mobile-small {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+  }
+}
+
+.not-only__img {
+  max-width: 69.8rem;
+  height: 72.8rem;
+  background-image: url('./assets/img/not-only/puppy.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  @include media-tablet {
+    width: 56.9rem;
+    height: 59.3rem;
+    margin-top: 5.7rem;
+    margin-left: 1.5rem;
+  }
+  @include laptop-mini {
+    max-width: 40rem;
+  }
+  @include media-mobile-big {
+    max-width: 40rem;
+    height: 41.3rem;
+  }
+  @include media-mobile-medium {
+    max-width: 33rem;
+    height: 34.3rem;
+    margin-top: 1.7rem;
+    margin-left: 7.5rem;
+  }
+  @include media-mobile-small {
+    max-width: 26rem;
+    height: 27.2rem;
+    margin-top: 1.7rem;
+    margin-left: 0rem;
+    align-items: center;
+    margin-top: 3.5rem;
+    margin-left: 4.1rem;
+  }
+
+  @media (max-width: 725px) and (min-width: 720px) {
+    max-width: 55rem !important;
+    margin-left: 0rem !important;
+  }
+}

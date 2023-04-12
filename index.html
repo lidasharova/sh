@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" class="scrollable">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,7 +11,7 @@
 	<link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="body_main">
 	<header class="header texture">
 		<div class="container">
 			<div class="header__wrapper">
@@ -24,6 +24,25 @@
 								Boston</span></a>
 					</div>
 				</div>
+				<div class="header__menu-line">
+					<span class="hamburger">
+						<span class="hamburger__line"></span>
+						<span class="hamburger__line"></span>
+						<span class="hamburger__line"></span>
+					</span>
+				</div>
+				<div class="overlay"></div>
+				<div class="adaptive_menu">
+					<ul class="adaptive_menu__menu">
+						<li class="adaptive_menu__li active"><a href="#about" class="adaptive_menu__link">About
+								the shelter</a></li>
+						<li class="adaptive_menu__li"><a href="pets.html" class="adaptive_menu__link">Our pets</a></li>
+						<li class="adaptive_menu__li"><a href="#help" class="adaptive_menu__link">Help the shelter</a>
+						</li>
+						<li class="adaptive_menu__li"><a href="#contacts" class="adaptive_menu__link">Contacts</a></li>
+					</ul>
+				</div>
+
 				<nav class="nav">
 					<ul class="menu">
 						<li class="menu__link_active"><a href="#about" class="menu__link">About the shelter</a>
@@ -35,10 +54,8 @@
 				</nav>
 			</div>
 		</div>
-	</header>
-	<main class="main">
-		<section class="not-only texture" id="#not-only">
-			<div class="container">
+		<section class="not-only" id="#not-only">
+			<div class="container not-only__container">
 				<div class="not-only__wrapper">
 					<div class="not-only__content">
 						<h2 class="not-only__title">Not only people need a house</h2>
@@ -52,6 +69,8 @@
 				</div>
 			</div>
 		</section>
+	</header>
+	<main class="main">
 		<section class="about" id="#about">
 			<div class="container">
 				<div class="about__wrapper">
@@ -76,31 +95,26 @@
 		</section>
 		<section class="our-friends" id="friends">
 			<div class="container">
-				<div class="our-friends__wrapper">
+				<div class="our-friends__wrapper" id="our-friends__wrapper">
 					<h3 class="our-friends__title">    Our friends who    
 						are looking for a house</h3>
-					<div class="our-friends__slider">
-						<div class="slider__button slider__left-arrow"></div>
-						<div class="our-friends__slider__card">
-							<div class="card card__img_1"></div>
-							<div class="card__title">Katrine</div>
-							<button class="card__button">Learn more</button>
+
+					<div class="our-friends__slider_items">
+						<div class="slider__button slider__left-arrow left-arrow"></div>
+						<div class="our-friends__slider__wrapper" id="our-friends__slider__wrapper">
+							<div class="our-friends__slider our-pets__slider" id="our-friends__slider">
+							</div>
 						</div>
-						<div class="our-friends__slider__card">
-							<div class="card card__img_2"></div>
-							<div class="card__title">Jennifer</div>
-							<button class="card__button">Learn more</button>
+						<div class="arrow_mobile_container">
+							<div class="slider__button slider__left-arrow_mobile left-arrow"></div>
+							<div class="slider__button slider__right-arrow_mobile right-arrow"></div>
 						</div>
-						<div class="our-friends__slider__card">
-							<div class="card card__img_3"></div>
-							<div class="card__title">Woody</div>
-							<button class="card__button">Learn more</button>
-						</div>
-						<div class="slider__button slider__right-arrow"></div>
+						<div class="slider__button slider__right-arrow right-arrow"></div>
 					</div>
-					<div class="button our-friends__button"><a class="button__link" href="pets.html">Get to know the
-							rest</a></div>
+					<a class="button__link button our-friends__button" href="pets.html">Get to know the
+						rest</a>
 				</div>
+			</div>
 			</div>
 		</section>
 		<section class="help" id="help">
@@ -174,36 +188,36 @@
 		</section>
 	</main>
 	<footer class="footer texture">
-		<div class="container">
+		<div class="container footer__container">
 			<div class="footer__wrapper">
-				<div class="footer__item">
+				<div class="footer__item footer__item_1">
 					<h3 class="footer__title">For questions and suggestions</h3>
 					<div class="adress__mail">
 						<a class="adress-container adress__link" target="_blank" href="mailto:email@shelter.com.com">
-							<div class="adress__svg adress__mail_svg"></div>
+							<div class="adress__svg adress__mail_svg mail_svg"></div>
 							<h4 class="adress__link">email@shelter.com</h4>
 						</a>
 					</div>
 					<div class="adress__number">
 						<a class="adress-container" href=tel:+136745677554>
-							<div class="adress__svg adress__number_svg"></div>
+							<div class="adress__svg adress__number_svg number_svg"></div>
 							<h4 class="adress__link">+13 674 567 75 54</h4>
 						</a>
 					</div>
 				</div>
-				<div class="footer__item footer__map">
-					<h3 class="footer__title">We are waiting for your visit</h3>
+				<div class="footer__item footer__item_2 footer__map">
+					<h3 class="footer__title footer__title_2">We are waiting for your visit</h3>
 					<div class="">
 						<a class="adress__link map-container" href="https://goo.gl/maps/MEU5oGwVSCTyDs3U7"
 							target="_blank">
-							<div class="adress__svg map__svg"></div>
-							<h4 class="adress__link">1 Central Street, Boston (entrance from the store)</h4>
+							<div class="adress__svg map__svg_1"></div>
+							<h4 class="adress__link map__link_1">1 Central Street, Boston (entrance from the store)</h4>
 						</a>
 					</div>
 					<div class="adress__number">
 						<a class="map-container" href="https://goo.gl/maps/MEU5oGwVSCTyDs3U7" target="_blank">
-							<div class="adress__svg map__svg"></div>
-							<h4 class="adress__link">18 South Park, London</h4>
+							<div class="adress__svg map__svg_2"></div>
+							<h4 class="adress__link map__link_2">18 South Park, London</h4>
 						</a>
 					</div>
 				</div>
@@ -211,7 +225,8 @@
 			</div>
 		</div>
 	</footer>
-	<script src="index.js"></script>
+	<script type="module" src="index.js"></script>
 </body>
+
 
 </html>

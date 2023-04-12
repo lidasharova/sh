@@ -1,0 +1,152 @@
+.our-friends__slider__wrapper {
+  width: 990px;
+  overflow: hidden;
+  @media (min-width: 500px) and (max-width: 1115px) {
+    width: 650px;
+  }
+  @media (min-width: 300px) and (max-width: 720px) {
+    width: 270px;
+  }
+}
+
+.our-friends__slider {
+  display: flex;
+  position: relative;
+  left: -1165px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @media (min-width: 500px) and (max-width: 1115px) {
+    left: -1035px;
+  }
+  @media (min-width: 300px) and (max-width: 720px) {
+    left: -400px;
+  }
+}
+
+.slider-left {
+  display: flex;
+}
+
+.slider-active {
+  display: flex;
+}
+
+.slider-right {
+  display: flex;
+}
+
+.slider_item {
+  margin: 0 45px;
+  @media (min-width: 500px) and (max-width: 1115px) {
+    margin: 0 30px;
+  }
+  @media (min-width: 300px) and (max-width: 720px) {
+    margin: 0 30px;
+  }
+  @media (width: 720px) {
+    margin: 0 50px;
+  }
+}
+
+//анимация перелистывания карусели на компьютере
+
+@keyframes move-right-desktop {
+  from {
+    left: -1165px;
+  }
+  to {
+    left: -2285px;
+  }
+}
+
+@keyframes move-right-laptop {
+  from {
+    left: -1035px;
+  }
+  to {
+    left: -1740px;
+  }
+}
+
+@keyframes move-right-mobile {
+  from {
+    left: -330px;
+  }
+  to {
+    left: -780px;
+  }
+}
+
+@keyframes move-left-desktop {
+  from {
+    left: -1125px;
+  }
+  to {
+    left: -45px;
+  }
+}
+
+@keyframes move-left-laptop {
+  from {
+    left: -660px;
+  }
+  to {
+    left: -335px;
+  }
+}
+
+@keyframes move-left-mobile {
+  from {
+    left: -330px;
+  }
+  to {
+    left: -20px;
+  }
+}
+
+//класс для движения влево
+
+.transition-left {
+  animation-name: move-left-desktop;
+  animation-duration: 2s;
+
+  @media (min-width: 500px) and (max-width: 1115px) {
+    animation-name: move-left-laptop;
+  }
+  @media (min-width: 300px) and (max-width: 720px) {
+    animation-name: move-left-mobile;
+  }
+}
+
+//класс для движения вправо
+.transition-right {
+  animation-name: move-right-desktop;
+  animation-duration: 2s;
+
+  @media (min-width: 500px) and (max-width: 1115px) {
+    animation-name: move-right-laptop;
+  }
+  @media (min-width: 300px) and (max-width: 720px) {
+    animation-name: move-right-mobile;
+  }
+}
+
+//удаление лишних карточек для др расширений
+
+#slider-left .slider_item:last-child,
+#slider-active .slider_item:last-child,
+#slider-right .slider_item:last-child {
+  @media (min-width: 500px) and (max-width: 1115px) {
+    display: none;
+  }
+}
+
+#slider-left .slider_item:nth-last-child(-n + 2),
+#slider-active .slider_item:nth-last-child(-n + 2),
+#slider-right .slider_item:nth-last-child(-n + 2) {
+  @media (min-width: 300px) and (max-width: 720px) {
+    display: none;
+  }
+}

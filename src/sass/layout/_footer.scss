@@ -1,0 +1,315 @@
+.footer {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #513d2f, #211f20);
+    z-index: -1;
+  }
+}
+.footer__container {
+  @include media-mobile-small {
+    padding: 0rem 1rem !important;
+  }
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-top: 44px;
+  justify-content: center;
+  align-items: stretch;
+  @include media-tablet {
+    grid-template: repeat(2, auto) / 1fr 1fr;
+    padding-top: 3rem;
+    gap: 0;
+    margin-left: 35px;
+  }
+  @include media-mobile-medium {
+    grid-template: repeat(3, auto) / 1fr;
+  }
+
+  @include media-mobile-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    gap: 0;
+    margin-left: 0px;
+  }
+}
+
+.footer__item_1 {
+  @include media-mobile-medium {
+    grid-area: 1/1/2/2;
+  }
+  @include media-mobile-small {
+    width: 278px;
+    height: 208px !important;
+  }
+}
+
+.footer__item_2 {
+  row-gap: 32px;
+  @include media-mobile-medium {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  width: 278px;
+  height: 222px !important;
+  @include media-mobile-small {
+    width: 310px;
+  }
+  @include media-tablet {
+    row-gap: 33px;
+  }
+}
+
+.footer__item {
+  max-width: 30.2rem;
+  max-height: 23.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  @include media-tablet {
+    height: 23.4rem;
+    margin-top: 0rem;
+  }
+  @include media-mobile-big {
+    justify-content: center;
+  }
+  @include media-mobile-medium {
+    height: 16.4rem;
+    display: grid;
+    justify-content: start;
+  }
+  @include media-mobile-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.adress-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  @include media-mobile-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 27rem;
+  }
+}
+
+.map-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.footer__title {
+  color: $color-light-xl;
+  max-width: 30rem;
+  @include media-mobile-big {
+    max-width: 20rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  @include media-mobile-small {
+    max-width: 29rem;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+}
+
+.footer__title_2 {
+  @include media-mobile-small {
+    margin-left: 5px;
+  }
+}
+
+.adress__svg {
+  background-size: 4rem 3.2rem !important;
+  width: 4rem;
+  height: 3.2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 2rem !important;
+  @include media-mobile-medium {
+    width: 3rem;
+    height: 2.2rem;
+    background-size: 3rem 2.2rem !important;
+  }
+  @include media-mobile-small {
+    width: 5rem;
+    height: 3.2rem;
+    margin-right: 0rem !important;
+    background-size: 4rem 3.2rem !important;
+  }
+}
+
+.adress__mail_svg {
+  background-image: url('./assets/svg/footer/icon-email.svg');
+}
+
+.mail_svg {
+  margin-right: 10px;
+}
+
+.adress__number_svg {
+  background-image: url('./assets/svg/footer/icon-phone.svg');
+}
+
+.map__svg {
+  width: 2.1rem;
+  height: 3.2rem;
+  margin-right: 0rem;
+  @include media-mobile-medium {
+    background-size: 2.1rem 2.2rem;
+  }
+  @include media-mobile-small {
+    background-size: 25px 3.2rem;
+    width: 43px;
+    margin-top: 26px;
+  }
+}
+
+.adress__link {
+  color: $color-primary;
+  text-align: left;
+  @include media-mobile-small {
+    @include font(2rem, 2.4rem);
+  }
+}
+
+.map__link_1 {
+  width: 300px;
+
+  @include media-mobile-small {
+    margin-right: 0px;
+    width: 250px;
+    margin-top: 28px;
+  }
+
+  @media (max-width: 850px) and (min-width: 680px) {
+    width: 240px !important;
+  }
+
+  @media (max-width: 769px) and (min-width: 768px) {
+    width: 300px !important;
+  }
+  @include media-tablet {
+    margin-top: 0px;
+    width: 300px;
+  }
+  @include media-mobile-small {
+    width: 250px;
+  }
+}
+
+.map__link_2 {
+  margin-left: -1.7rem;
+  @include media-mobile-small {
+    margin-right: 0px;
+    margin-left: 0;
+    width: 230px;
+  }
+}
+
+.footer__img {
+  background-image: url('./assets/img/footer/footer-puppy.png');
+  width: 30rem;
+  height: 31rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  justify-self: end;
+  @include media-tablet {
+    grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    justify-self: center;
+    margin-top: 65px;
+    margin-right: 35px;
+  }
+
+  @media (max-width: 850px) and (min-width: 820px) {
+    width: 15rem !important;
+  }
+
+  @include laptop-mini-min {
+    width: 20rem;
+    height: 31rem;
+  }
+
+  @include media-mobile-big {
+    margin-top: 35px;
+    margin-right: 10px;
+    height: 20rem;
+  }
+  @include media-mobile-medium {
+    grid-area: 3 / 1 / 4 / 2;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  @include media-mobile-small {
+    width: 26rem;
+    height: 26.9rem;
+    margin-top: 40px;
+  }
+  @media (min-width: 781px) and (max-width: 830px) {
+    width: 20rem;
+  }
+  @media (max-width: 1000px) and (min-width: 910px) {
+    width: 20rem;
+  }
+}
+
+.footer__map {
+  margin-left: 2.8rem;
+  @include media-tablet {
+    margin-left: 0rem;
+  }
+  @include media-mobile-small {
+    margin-top: 40px;
+  }
+}
+
+.footer-item-pets {
+  margin-top: 1.7rem;
+  @include media-tablet {
+    margin-top: 0px;
+  }
+}
+
+.map__svg_1 {
+  margin-right: 3px !important;
+  background-size: 2.1rem 3.2rem !important;
+  background-image: url('./assets/svg/footer/icon-marker.svg');
+  @include media-mobile-small {
+    margin-right: -7px !important;
+  }
+}
+
+.map__svg_2 {
+  margin-right: 19px !important;
+  background-size: 2.1rem 3.2rem !important;
+  background-image: url('./assets/svg/footer/icon-marker.svg');
+  @include media-mobile-small {
+    margin-right: -6px !important;
+  }
+}

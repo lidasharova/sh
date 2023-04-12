@@ -1,0 +1,67 @@
+.not-only__button {
+  width: 20.7rem !important ;
+  @include media-tablet {
+    margin: auto;
+    margin-top: 26px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @extend %transition;
+  @extend %font-Georgia-normal;
+  @include font(1.7rem, 2.21rem);
+  background: $color-primary;
+  color: $color-dark-3xl;
+  width: 26rem;
+  height: 5.2rem;
+  border-radius: 10rem;
+  letter-spacing: 0.06em;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-primary-light;
+  }
+
+  @include media-mobile-small {
+    height: 5.2rem;
+    width: 20.7rem;
+  }
+}
+
+.card__button {
+  @extend %transition;
+  @extend %font-Georgia-normal;
+  @include font(1.7rem, 2.21rem);
+  background: $color-light-xl;
+  color: $color-dark-3xl;
+  width: 18.7rem;
+  height: 5.2rem;
+  border-radius: 10rem;
+  letter-spacing: 0.06em;
+  border: 0.2rem solid $color-primary;
+  margin-bottom: 3rem;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-primary-light;
+    border: 0.2rem solid $color-primary-light;
+  }
+}
+
+.slider__button {
+  @extend %transition;
+  width: 5.2rem;
+  height: 5.2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  @media (max-width: 725px) and (min-width: 720px) {
+    width: 4.2rem;
+  }
+}
+
+

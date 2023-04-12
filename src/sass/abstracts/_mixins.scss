@@ -1,0 +1,76 @@
+//миксин для шрифта
+@mixin font($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+//для медиа запросов
+
+@mixin media-laptop {
+  @media (min-width: $laptop-width) {
+    @content;
+  }
+}
+
+//для слайдера
+@mixin laptop {
+  @media (max-width: $laptop-width) and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin laptop-max2 {
+  @media (max-width: $laptop-width) and (min-width: $laptop-max) {
+    @content;
+  }
+}
+
+@mixin laptop-max {
+  @media (max-width: $laptop-max) and (min-width: $tablet) {
+    @content;
+  }
+}
+
+// 780px-850px шрифт
+@mixin laptop-mini {
+  @media (max-width: $laptop-mini) and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin laptop-mini-min {
+  @media (max-width: $laptop-max) and (min-width: $laptop-mini) {
+    @content;
+  }
+}
+
+//для появления гамбургера и скрытия меню
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin media-mobile-big {
+  @media (max-width: $mobile-big) {
+    @content;
+  }
+}
+
+@mixin media-mobile-medium {
+  @media (max-width: $mobile-medium) {
+    @content;
+  }
+}
+
+@mixin media-mobile-small {
+  @media (max-width: $mobile-small) {
+    @content;
+  }
+}

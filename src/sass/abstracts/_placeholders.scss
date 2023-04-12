@@ -1,0 +1,30 @@
+//fonts
+
+%font-Georgia-normal {
+  font-family: Georgia-normal, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%font-Georgia-bold {
+  font-family: Georgia-bold, Verdana, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%font-Arial {
+  font-family: Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%font-Arial-italic {
+  font-family: Arial-italic, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+//плавность
+%transition {
+  transition: all 0.4s ease-out;
+}

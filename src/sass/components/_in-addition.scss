@@ -1,0 +1,196 @@
+.in-addition {
+  background-color: $color-light-l;
+  @include media-tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.in-addition__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 105px;
+  justify-content: center;
+  align-items: stretch;
+  margin-left: 12.7rem;
+  @include laptop {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    justify-items: center;
+    margin-left: 0;
+    padding-bottom: 8rem;
+  }
+  @include media-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    align-items: start;
+    justify-items: center;
+    margin-left: 0;
+    padding-bottom: 10rem;
+  }
+  @include media-mobile-small {
+    padding-top: 26px;
+    padding-bottom: 41px;
+  }
+}
+
+.in-addition__img {
+  align-self: end;
+  justify-self: end;
+  width: 50.5rem;
+  height: 26.1rem;
+  background-image: url('./assets/img/in-addition/donation-dog.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include laptop {
+    order: 2;
+    margin-top: 20px;
+    justify-self: auto;
+  }
+  @include media-tablet {
+    order: 2;
+    margin-top: 36px;
+  }
+
+  @include media-mobile-medium {
+    width: 42.5rem;
+    height: 22.1rem;
+    margin-top: 10px;
+  }
+  @include media-mobile-small {
+    width: 260px;
+    height: 135.2px;
+    margin-top: 25px;
+    margin-right: 11px;
+  }
+}
+
+.in-addition__content {
+  align-items: start;
+  row-gap: 2rem;
+  justify-content: space-between;
+  height: 28.5rem;
+  @include media-mobile-small {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    height: 281px;
+    justify-content: flex-start;
+  }
+}
+
+.in-addition__title {
+  max-width: 30rem;
+  padding-top: 1rem;
+  @include media-mobile-small {
+    max-width: 22.1rem;
+    padding-top: 1.3rem;
+  }
+}
+
+.credit-card {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.3rem;
+  width: 34.9rem;
+  border-radius: 0.9rem;
+  background-color: $color-primary;
+  margin-top: 1.6rem;
+  @include media-mobile-small {
+    width: 281px !important;
+    height: 43px;
+    margin-top: 0.5rem;
+  }
+
+  & .credit-card__svg {
+    display: inline-block;
+    width: 30rem;
+    height: 2.3rem;
+    background-image: url('./assets/svg/credit-card.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    flex-grow: 0;
+    margin-bottom: -0.6rem;
+    margin-left: -1.5rem;
+    @include media-tablet {
+      margin-bottom: 0;
+    }
+    @include media-mobile-small {
+      margin-bottom: 0.3rem;
+      margin-left: -1.5rem;
+    }
+  }
+
+  & .credit-card__number {
+    @extend %font-Georgia-normal;
+    @include font(2rem, 2.3rem);
+    text-align: left;
+    color: $color-dark-l;
+    width: 27.4rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    @include media-mobile-small {
+      width: 206px !important;
+      text-align: right;
+    }
+  }
+}
+
+.in-addition__text {
+  @extend %font-Arial-italic;
+  @include font(1.2rem, 1.8rem);
+  text-align: left;
+  color: $color-dark-m;
+  max-width: 38rem;
+  margin-top: 2.3rem;
+  @include media-tablet {
+    margin-top: 2rem;
+  }
+  @include media-mobile-small {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: -1px;
+  }
+}
+
+.credit-card__link {
+  color: $color-dark-l;
+  position: relative;
+  display: inline-block;
+  width: 34.9rem;
+  position: relative;
+  color: #545454;
+  padding-bottom: -0.4rem;
+  letter-spacing: 0.06em;
+  right: 1.6rem;
+  @include media-mobile-small {
+    @include font(1.5rem, 1.65rem);
+    width: 21rem;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 3px;
+  }
+}
+
+.in-addition__mini-title {
+  margin-top: 2.1rem;
+  @include media-mobile-small {
+    width: 273px;
+    @include font(1.5rem, 1.65rem);
+    white-space: nowrap;
+    letter-spacing: 0px;
+    margin-top: 3px;
+  }
+}

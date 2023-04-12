@@ -1,0 +1,89 @@
+.about {
+  background-color: $color-light-xl;
+  @include media-tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  justify-content: center;
+  align-items: stretch;
+  @include media-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+  }
+  @include media-mobile-small {
+    padding-top: 4.4rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+.about__img {
+  height: 40.8rem;
+  background-image: url('./assets/img/about/about-pets.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-left: 5rem;
+  @include media-tablet {
+    order: 2;
+    margin-left: 0;
+    margin-top: 80px;
+  }
+  @include media-mobile-big {
+    height: 35rem;
+  }
+  @include media-mobile-small {
+    margin-top: 156px;
+  }
+}
+
+.about__content {
+  height: 41rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: end;
+  margin-left: -5px;
+
+  @include media-tablet {
+    height: 38rem;
+    justify-content: space-between;
+    order: 1;
+    margin-left: 3px;
+  }
+}
+
+.about__title {
+  max-width: 37rem;
+  @include media-tablet {
+    margin-top: -0.1rem;
+    margin-left: 0;
+  }
+  @include media-mobile-small {
+    margin-top: 0rem;
+    margin-bottom: 1px;
+  }
+}
+
+.about__text {
+  @extend %font-Arial;
+  @include font(1.5rem, 2.4rem);
+  text-align: left;
+  color: $color-dark-xl;
+  max-width: 43rem;
+  margin: 0;
+  @include media-mobile-small {
+    margin-top: 2.5rem;
+    width: 27rem;
+    text-align: justify;
+    margin-top: 2.2rem;
+    margin-left: 2px;
+  }
+}

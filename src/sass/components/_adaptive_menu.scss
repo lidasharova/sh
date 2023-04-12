@@ -1,0 +1,115 @@
+.adaptive_menu {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background-color: $color-dark-3xl;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    transition: 0.9s ease 0s;
+    transform: translate(+100%, 0px);
+    z-index: 2;
+  }
+}
+
+//класс который добавим JS
+.adaptive_menu.active {
+  // display: block;
+  transform: translate(0px, 0px);
+}
+
+.adaptive_menu__menu {
+  width: 243px;
+  height: 327px;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 248px;
+  overflow: hidden;
+}
+
+.adaptive_menu__link {
+  text-decoration: none;
+  @extend %font-Arial;
+  @include font(3.2rem, 5.1rem);
+  color: $color-dark-s;
+  @extend %transition;
+  text-align: center;
+  &:hover {
+    color: $color-light-s;
+  }
+}
+
+.adaptive_menu__li.active a {
+  cursor: default;
+}
+
+.adaptive_menu__li.active {
+  border-bottom: 0.3rem solid $color-primary;
+  cursor: default;
+}
+
+//фон и скролл
+//подложка - затемнение
+.header__menu-line.active ~ .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.565);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.header__menu-line.active ~ .adaptive_menu_pets {
+  display: block;
+}
+
+/* Стили для блокировки прокрутки */
+html.scroll-lock {
+  overflow: hidden;
+}
+
+/* Стили для плавной прокрутки */
+html.scrollable {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.adaptive_menu_pets {
+  display: none;
+  @include tablet {
+    // display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background-color: $color-dark-3xl;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    transition: 0.9s ease 0s;
+    transform: translate(+100%, 0px);
+    z-index: 2;
+  }
+}
+
+//класс который добавим JS
+.adaptive_menu_pets.active {
+  display: block;
+  transform: translate(0px, 0px);
+}
